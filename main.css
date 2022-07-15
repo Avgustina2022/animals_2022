@@ -1,0 +1,473 @@
+html {font-family: "PT Sans, sans-serif;"}
+
+img{display: inline-block;}
+a {transition: 0,5s case-out;}
+
+
+.letter { 
+     color: red; 
+     font-size: 130%; 
+		  
+     font-family: serif; 
+     position: relative; 
+     top: 5px; 
+    } 
+.h1
+
+.option {
+
+    -webkit-animation-duration: 3s;
+
+    -webkit-animation-delay: 2s;
+
+    -webkit-animation-iteration-count: 5;
+
+}
+
+
+.nav{
+	
+		margin: auto; 
+		width: 100%;
+		height: 50px;
+		display: flex;
+		
+		text-align:center;
+		margin: 0;
+
+
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #0066FF;
+        border-radius: 20px 5px;
+        width: 550px;
+        text-align: center;
+	background-color: #33ADFF;
+}
+	
+.topnav{
+	background-color: #FFF;
+	font-size: 14 px;
+	margin-top: 20 px;
+	text-align: center;
+}
+.topnav a {
+    color: darkgrey;
+    
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+	
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.topnav.icon{
+	display: none;
+}
+
+/*/====== flex ===========*/
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.row a {
+	padding: 10px;
+	background-color: beige;
+}
+.home_icon {
+	width: 50px;
+}
+
+.logo{
+    width: 10px;
+    height: 30px;
+	}
+	
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+topnav a.icon{
+	float: right; 
+	margin-top: -7px;
+	display: block; 
+	color: black;
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}	
+}
+
+
+
+
+
+
+
+/* ******************
+
+GRID
+
+****************** */
+
+.container {
+	
+	width: 1180px;
+	margin-right: auto; 
+	margin-left:auto;	
+	
+}
+
+.row-f{
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.c-4 {
+	
+	width:  360px;
+
+	}
+
+
+
+
+
+.header{
+	background: #786BEE;
+	background-image: url(../bootstrap/bg/savanna.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 50vh;
+    min-height: 300px;
+
+	color: white;
+	text-align: center; 
+	
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+}
+
+.h_1{
+	font-size: 40px;
+	margin-bottom: 30px;
+	font-family: "PT-Sans", sans-serif; 
+	margin:0;
+}
+
+.h_slogan {
+	font-size: 30px; 
+}
+
+.h_arrow {
+	font-size: 40px;
+	width: 50px;
+	margin-left:30px;
+	position: absolute; 
+	bottom: 750px;
+	left: 50%;
+}
+
+/* ******************
+
+INFO
+
+****************** */
+
+.pf{
+	padding-top: 70px;
+	padding-bottom: 100px;
+	
+}
+.pf-item{
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 46px;
+	margin-bottom: 50px;
+	text-align: center; 
+	}
+.pf-item_img{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.pf-item_title {
+	font-size: 24px;
+	line-height: normal;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.pf-item_title h2 {
+	font-size: 24px;
+	font-weight: normal;
+}
+.pf-item_title a{
+	text-decoration:none;
+	color: #000;
+	border-bottom: 1 px solid #FFF;
+}
+.pf-item_title a:hover {color: #0052C2;}
+
+/* ******************
+
+FOOTER
+
+****************** */
+
+.footer{
+	background-color: #061634;
+	color: aqua; 
+	padding-top: 0px; 
+	padding-bottom: 200px;
+}
+.row{
+	padding-top: 20px;
+}
+
+.panda-f {height: 30px;}		
+}
+.footer p{
+	margin-top: 0px;
+	margin-bottom: 15px;
+	
+	}
+p.pt_name{
+	font-size: 26px;
+	line-height:normal;
+	margin-bottom: 15px;
+	
+	
+	}
+
+.ft_soc_icon {color: #FFF; 
+	font-size: 30px;
+}
+.row-c-f {
+	max-width: 230px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+p.ft_soc_icon a {
+	color: #FFF;
+	text-decoration: none; 
+	margin-right: 26px;
+	justify-content: center;
+	padding-top: 10px;
+	
+}
+p.ft_soc_icon a{
+	color: #FFF;
+	text-decoration: none; 
+	margin-right: 28px;
+	justify-content: center;
+	padding-top: 10px;
+	}
+p.ft_soc_icon a:hover{
+	color: #FFFF00;
+	
+	
+}
+.button{
+	font-family: "PT-sans",sans-serif;
+	font-weight: 700; 
+	text-transform:uppercase;
+	letter-spacing: 1px;
+	text-decoration: none; 
+	color: #FFF;
+	display: inline-block; 
+	border-width: 3px;
+	border-color: #FFF;
+	border-style: solid; 
+	border-radius: 55px;
+	padding-bottom: 8px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center;
+	
+}
+.button:hover{
+	color:#FFFF00; 
+	background-color:#FFF;}
+	
+	
+.pf-sp{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.button-back{
+	
+    font-family: "PT Sans,sans-serif";
+	font-weight: 700; 
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-decoration: none; 
+	color: black; 
+	display: inline-block; 
+	
+	border-width: 3px;
+	border-color:dimgray;
+	border-style: solid; 
+	border-radius: 45px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+.button-back:hover{
+	color: #FFFF30;
+	background-color: black;
+}
+/* GALARY----------------------------------------- */
+.slideshow-container {
+ max-width: 1000px;
+	width: 80%;
+ position: relative;
+ margin: 30px auto;
+}
+.mySlides{
+	display: none; 
+	}
+.mySlides img{
+	width: 100%;
+}
+/* *******************
+вперед-назад кнопки
+**********************/
+
+.prev,.next{
+	
+  	cursor: pointer; 
+	position: absolute; 
+	top: 50%;
+	width: auto; 
+	margin-top: -22px;
+	padding: 16px;
+	color: white; 
+	font-weight: bold; 
+	font-size: 18px;
+	transition: 0,6s ease;
+	border-radius: 0 3px 3px 0;
+	
+}
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}/
+/* *******************
+hover и цвет заднего фона
+**********************/
+
+.prev:hover,.next:hover{
+	background-color: rgba(0,0,0,0)
+		}
+
+/* *******************
+текст на картинке
+**********************/
+
+.text{
+	color: #F2F2F2; 
+	font-size: 15px;
+	padding: 6px 12px;
+	position: absolute; 
+	bottom: 8px;
+	width: 100%;
+	text-align: center; 
+	}
+/* ****************
+текст по номеру 1/3
+**********************/
+
+.numbertext{
+	color: #F2F2F2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute; 
+	top: 0;
+	}
+
+/* ******************
+индикаторы точки
+**********************/
+.dot{
+	cursor: pointer; 
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #BBB;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.active, .dot:hover{
+	background-color: #717171;
+}
+
+/* ************** ***
+анимация fade
+**********************/
+
+.fade{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@webkit-keyframes fade{
+	from {opacity: .4}to {opacity: 1}
+}
+
+@keyframes fade{
+	from {opacity: .4}to{opacity: 1}
+}
+
+/* ************** ***
+кнопка назад
+**********************/
+
+pf-sp{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+

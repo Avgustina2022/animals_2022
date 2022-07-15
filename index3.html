@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>портфолио</title>
+<!-- Отображать страницу в масштабе 100% -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Нормализуем стили -->
+<link      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+<!-- Подключаем собственные стили -->
+<link rel="stylesheet" href="/main.css" />
+<!-- Отображаем фавикон -->
+<link rel="shortcut icon" type="image/x-icon" href="#" />
+<!-- Подключаем шрифты -->
+<link      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"/>
+
+<style>
+  img {
+  width: 20%;
+}
+.letter {
+  color: red; /* Красный цвет символов */
+  font-size: 150%; /* Размер шрифта в процентах */
+  font-family: serif; /* Шрифт с засечками */
+  position: relative; /* Относительное позиционирование */
+  top: 2px; /* Сдвиг сверху */
+}
+.centerLayer {
+  margin-left: 30%; /* Отступ слева */
+  width: 40%; /* Ширина слоя */
+  background: grey; /* Цвет фона */
+  padding: 10px; /* Поля вокруг текста */
+}
+</style>
+	  
+</head>
+
+<body>
+   
+  <div class="centerLayer">
+
+  <img src="/фото меньше 1.jpg" alt="" />
+  <h1><p><span class="letter">Г</span>лобенко Ирина Евгеньевна</h1></p>
+  <h2>Защита животных, волонтер</h2>
+  <h3>Москва, м.Академическая</h3>
+  <h4>тел. 8 (985) 9555555</h4>
+</body>
+<hr>
+   <ul>
+   <li>Москва</li>
+   <li>Санкт-Петербург</li>
+   <li>Екатеринбург</li>
+   </ul>
+
+
+ <form action="select1.php" method="post">
+   <p><select size="3" multiple name="hero[]">
+   <option disabled>Выберите опцию</option>
+   <option value="Москва">Москва</option>
+   <option selected value="Санкт-Петербург">Санкт-Петербург</option>
+   <option value="Екатеринбург">Екатеринбург</option>
+    
+</select></p>
+   <p><input type="submit" value="Отправить"></p>
+	  
+   <form action="send.php" method="post">
+   <input type="text" name="fio" placeholder="Укажите ФИО" required>
+   <input type="text" name="email" placeholder="Укажите e-mail" required>
+   <input type="submit" value="Отправить">
+</form>
+	  
+	  
+</form>
+<hr>
+</html>
